@@ -4,7 +4,7 @@
 
 To show a set of mildly customizable movie suggestions and texts for each participant, we needed to collect a broad set of relatively well-known movies to base suggestions on (the "seed" movie), a set of suggestions for each seed movie, and a set of human-generated and model-generated texts for each suggested movie.
 
-To collect seed and suggestion movies, we used the MovieLens dataset\cite{harperMovieLensDatasetsHistory2015}\footnote{https://movielens.org, as of 2023/04/26}, together with IMDB\footnote{https://www.imdb.com/, as of 2023/04/26} and BestSimilar\footnote{https://bestsimilar.com/, as of 2023/04/26}.
+To collect seed and suggestion movies, we used the [MovieLens dataset](https://movielens.org)(2023/04/26), together with [IMDB](https://www.imdb.com/)(2023/04/26) and [BestSimilar](https://bestsimilar.com/)(2023/04/26).
 
 We manually selected 10 well-known seed movies to ideally cover a range of movie genres, as well as raise the chance of most participants recognizing at least one seed movie.
 We applied these requirements for seed movies:
@@ -24,12 +24,12 @@ We selected the top 5 movies on this last after applying these requirements:
 - May _not_ be overlapping in franchise (e.g. if one Winnie the Pooh movie is already included, any following Pooh-branded movies are excluded)
 
 For each movie suggestion, we collected 5 human-generated reviews to use as a baseline comparison.
-These reviews consisted of the top 5 most "featured" non-spoiler reviews on IMDB\footnote{as of 2023/04/26, "featured" reviews seem to use a metric combining high helpfulness vote percentage and high total vote counts} for each movie.
+These reviews consisted of the top 5 most "featured" non-spoiler reviews on IMDB (as of 2023/04/26, "featured" reviews seem to use a metric combining high helpfulness vote percentage and high total vote counts) for each movie.
 IMDB movie review format includes both a review title and review text, but multiple reviewers referenced their titles in the review texts.
 To handle this, we prepended review title to the review text.
 
 For each movie suggestion, we also synthesized one model-generated text using the 5 human-generated reviews as a source of information about the movie.
-We used "gpt-3.5-turbo-0301" from OpenAI\footnote{https://platform.openai.com/docs/api-reference/chat} with a custom system prompt instructing GPT that it is a movie recommender bot, a custom chat prompt instructing GPT to write a short review in the style of a friendly recommendation with the 5 human-generated reviews provided as reference material, and default hyperparameters.
+We used ["gpt-3.5-turbo-0301" from OpenAI](https://platform.openai.com/docs/api-reference/chat) with a custom system prompt instructing GPT that it is a movie recommender bot, a custom chat prompt instructing GPT to write a short review in the style of a friendly recommendation with the 5 human-generated reviews provided as reference material, and default hyperparameters.
 
 The exact prompt structure (using R1, R2, etc. as variables containing the raw human review titles+texts):
 ```
@@ -50,8 +50,8 @@ Finally, we took the human-generated and model-generated texts, reformatted them
 In summary, there are 10 well-known seed movies, 5 lesser-known suggestions based on each seed movie (50 total), 5 human-generated reviews for each suggestion (250 total), and 1 model-generated review for each suggestion (50 total).
 
 The exact movies and associated review texts used are available in this repository:
-- [[moviereviewcollection_human.csv]]
-- [[moviereviewcollection_model.csv]]
+- [moviereviewcollection_human.csv](moviereviewcollection_human.csv)
+- [moviereviewcollection_model.csv](moviereviewcollection_model.csv)
 These reviews were imported into Qualtrics via manual copy-paste.
 (Please let us know how to improve Qualtrics survey implementation if you have tips.)
 

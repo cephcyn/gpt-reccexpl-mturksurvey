@@ -1,6 +1,6 @@
 # Survey Distribution Notes
 
-# Dataset
+## Dataset
 
 To show a set of mildly customizable movie suggestions and texts for each participant, we needed to collect a broad set of relatively well-known movies to base suggestions on (the "seed" movie), a set of suggestions for each seed movie, and a set of human-generated and model-generated texts for each suggested movie.
 
@@ -55,7 +55,7 @@ The exact movies and associated review texts used are available in this reposito
 These reviews were imported into Qualtrics via manual copy-paste.
 (Please let us know how to improve Qualtrics survey implementation if you have tips.)
 
-# Survey Procedure
+## Survey Procedure
 
 We generated condition codes to ensure balanced representation between human-generated and bot-generated texts for each movie, as well as between different human authors of the human-generated texts.
 Each participant was assigned one condition code that determines which of the 6 review texts is shown for each individual movie suggestion, as well as if they are shown sources for all review texts.

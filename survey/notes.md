@@ -52,6 +52,7 @@ In summary, there are 10 well-known seed movies, 5 lesser-known suggestions base
 The exact movies and associated review texts used are available in this repository:
 - [moviereviewcollection_human.csv](moviereviewcollection_human.csv)
 - [moviereviewcollection_model.csv](moviereviewcollection_model.csv)
+
 These reviews were imported into Qualtrics via manual copy-paste.
 (Please let us know how to improve Qualtrics survey implementation if you have tips.)
 
@@ -68,10 +69,10 @@ Survey participants went through the following steps in order.
 1. They were initially shown the consent form with information about the payment scheme and a brief introduction to the purpose and contents of the survey.
 2. They were asked to select one of the seed movies to base movie suggestions on.
 3. Participants were shown the 5 relevant movie suggestions for their chosen seed movie, together with review texts for each suggestion.
-  - Authorship and review texts shown were based on the participant's condition code.
-  - The 5 movie suggestions were shown in random order to reduce order bias.
-  - Participants were asked to rank these movies from 1 to 5 in order of how interested they were in watching (or rewatching) each movie.
-  - On the same page, participants were also asked to indicate which suggestions they had seen before.
+    - Authorship and review texts shown were based on the participant's condition code.
+    - The 5 movie suggestions were shown in random order to reduce order bias.
+    - Participants were asked to rank these movies from 1 to 5 in order of how interested they were in watching (or rewatching) each movie.
+    - On the same page, participants were also asked to indicate which suggestions they had seen before.
 4. For each suggested movie (in random order), participants were asked to give ratings for how accurate (only if they had seen the movie before), informative, persuasive, and interesting the texts were, as well as elaborate on what aspects of the text satisfied or did not satisfy these attributes.
-  - They were also asked if they would be interested in reading more reviews from the same author in the future.
+    - They were also asked if they would be interested in reading more reviews from the same author in the future.
 

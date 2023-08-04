@@ -1,8 +1,8 @@
 # gpt-reccexpl-mturksurvey
 
-(Survey deployment details)[survey/notes.md]
+[Survey deployment details](survey/notes.md)
 
-(Survey analysis notebooks (with outputs wiped))[#TODO]
+[Survey analysis notebooks (with outputs wiped)](#TODO)
 
-(Anonymized dataset export)[#TODO]
+[Anonymized dataset export](#TODO)
 

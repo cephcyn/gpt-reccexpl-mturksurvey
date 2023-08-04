@@ -40,7 +40,7 @@ messages=[
   },
   {
     'role':'user', 
-    'content':f'Please write a 75 to 100 word review of this movie, in the style of a friendly recommendation. Keep in mind that you have not watched this movie yourself.\nHere are some other reviews aboout this movie to help you out:\n1. {R1}\n2. {R2}\n3. {R3}\n4. {R4}\n5. {R5}'
+    'content':f'Please write a 75 to 100 word review of this movie, in the style of a friendly recommendation.\nHere are some other reviews aboout this movie to help you out:\n1. {R1}\n2. {R2}\n3. {R3}\n4. {R4}\n5. {R5}'
   },
 ]
 ```

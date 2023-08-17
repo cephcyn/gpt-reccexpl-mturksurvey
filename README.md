@@ -2,7 +2,7 @@
 
 [Survey deployment details](survey/notes.md)
 
-[Survey analysis notebooks (with outputs wiped)](#TODO)
+[Survey analysis notebooks (with outputs wiped)](https://github.com/cephcyn/gpt-reccexpl-mturksurvey/tree/main/analysis)
 
-[Anonymized dataset export](#TODO)
+[Anonymized dataset export](https://github.com/cephcyn/gpt-reccexpl-mturksurvey/tree/main/dataset)
 
